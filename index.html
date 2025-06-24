@@ -98,7 +98,7 @@
                         </div>
                     </div>
                     <p class="mt-10 text-xl md:text-2xl max-w-4xl mx-auto">Stellt euch vor, ihr könntet wegen der Person, die ihr liebt, den Job verlieren oder im Gefängnis landen. Das war jahrzehntelang Realität.</p>
-                    <p class="mt-4 text-2xl md:text-3xl font-bold text-indigo-400">Unsere Frage heute: Was hat sich wirklich geändert?</p>
+                    <p class="mt-4 text-2xl md:text-3xl font-bold text-indigo-400">Unsere Frage heute: Was hat sich <b>wirklich</b> geändert?</p>
                 </div>
             </section>
 
@@ -177,14 +177,16 @@
             <!-- Folie 7: Zeitstrahl -->
             <section class="slide" data-slide-id="7">
                 <div class="slide-content bg-gray-800 border border-gray-700">
-                    <h3 class="text-4xl font-bold text-center mb-10">Ein langer Weg: Unser Zeitstrahl</h3>
-                    <div class="relative w-full px-4">
-                        <!-- Die durchgehende Linie -->
-                        <div class="absolute left-0 top-1/2 w-full h-1 bg-indigo-400"></div>
+                    <h3 class="text-4xl font-bold text-center">Ein langer Weg: Unser Zeitstrahl</h3>
+                    <!-- Korrigiertes Layout: Abstand zwischen Titel und Zeitstrahl durch mt-24 hinzugefügt -->
+                    <div class="relative w-full px-4 mt-24">
+                        <!-- Die durchgehende Linie, jetzt korrekt zentriert -->
+                        <div class="absolute left-0 top-1/2 w-full h-1 bg-indigo-400 -translate-y-1/2"></div>
                         <div class="relative flex justify-between">
                             <!-- Meilenstein 1 -->
                             <div class="flex flex-col items-center w-1/5">
-                                <div class="absolute -top-12 text-center">
+                                <!-- Positionierung von unten, um Überlappung zu vermeiden -->
+                                <div class="absolute -bottom-14 text-center">
                                     <p class="font-bold text-lg text-indigo-300">~1969</p>
                                     <p class="text-sm">Der Wendepunkt</p>
                                 </div>
@@ -192,7 +194,8 @@
                             </div>
                             <!-- Meilenstein 2 -->
                             <div class="flex flex-col items-center w-1/5">
-                                <div class="absolute top-8 text-center">
+                                <!-- Positionierung von oben -->
+                                <div class="absolute top-6 text-center">
                                     <p class="font-bold text-lg text-indigo-300">1992</p>
                                     <p class="text-sm">Keine Krankheit</p>
                                 </div>
@@ -200,7 +203,7 @@
                             </div>
                              <!-- Meilenstein 3 -->
                             <div class="flex flex-col items-center w-1/5">
-                                <div class="absolute -top-12 text-center">
+                                <div class="absolute -bottom-14 text-center">
                                     <p class="font-bold text-lg text-indigo-300">1994/2002</p>
                                     <p class="text-sm">Ende der Strafbarkeit</p>
                                 </div>
@@ -208,7 +211,7 @@
                             </div>
                              <!-- Meilenstein 4 -->
                             <div class="flex flex-col items-center w-1/5">
-                                <div class="absolute top-8 text-center">
+                                <div class="absolute top-6 text-center">
                                     <p class="font-bold text-lg text-indigo-300">2017/19</p>
                                     <p class="text-sm">Gleichstellung</p>
                                 </div>
@@ -216,7 +219,7 @@
                             </div>
                              <!-- Meilenstein 5 -->
                             <div class="flex flex-col items-center w-1/5">
-                                <div class="absolute -top-12 text-center">
+                                <div class="absolute -bottom-14 text-center">
                                     <p class="font-bold text-lg text-red-400">Heute</p>
                                     <p class="text-sm">Der Kampf geht weiter</p>
                                 </div>
