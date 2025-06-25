@@ -28,6 +28,7 @@
             height: 100%;
             align-items: center;
             justify-content: center;
+            padding: 2rem;
             /* Neue, stabilere Animation */
             transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
             opacity: 0;
@@ -42,12 +43,21 @@
             position: relative;
             z-index: 10;
             width: 100%;
+            height: 100%;
             max-width: 1200px;
-            padding: 4rem 2rem;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* Korrigiertes Padding, um Platz für den Titel zu schaffen */
+            padding: 6rem 3rem 3rem;
             text-align: center;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
+            /* Einheitlicher Glas-Effekt */
+            background: rgba(31, 41, 55, 0.5); /* bg-gray-800 mit Transparenz */
+            backdrop-filter: blur(12px);
             border-radius: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
         .bg-image {
             position: absolute;
@@ -65,6 +75,17 @@
         .box-shadow-strong {
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
         }
+        .part-title {
+            position: absolute;
+            top: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #9ca3af; /* gray-400 */
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
     </style>
 </head>
 <body class="text-gray-200">
@@ -75,7 +96,7 @@
             <!-- Folie 1: Titelfolie -->
             <section class="slide active" data-slide-id="1">
                 <img src="https://www.tagesspiegel.de/images/2852455/alternates/BASE_21_9_W1000/1662033343000/regenbogenfahne.jpeg" alt="Eine große Regenbogenfahne weht im Wind" class="bg-image">
-                <div class="slide-content bg-transparent backdrop-filter-none">
+                <div class="slide-content !bg-transparent !backdrop-filter-none !border-none !p-0">
                     <h1 class="text-6xl md:text-8xl font-black uppercase tracking-wider text-shadow">Von Verstecken zu Sichtbarkeit?</h1>
                     <p class="mt-6 text-2xl md:text-3xl font-light text-gray-200 text-shadow">Queeres Leben zwischen Fortschritt und alten Vorurteilen</p>
                     <p class="mt-12 text-xl text-gray-300 text-shadow">Ein Vortrag von Tobi</p>
@@ -84,8 +105,8 @@
 
             <!-- Folie 2: Einleitung -->
             <section class="slide" data-slide-id="2">
-                <div class="slide-content bg-gray-800 border border-gray-700">
-                    <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <div class="slide-content">
+                    <div class="grid md:grid-cols-2 gap-8 items-stretch w-full">
                         <div class="text-center p-6 bg-gray-900 rounded-lg box-shadow-strong flex flex-col justify-center">
                             <img src="https://arolsen-archives.org/content/uploads/demonstration-schwule-aktivisten-berlin-1-800x450.webp" class="w-full h-48 object-cover rounded-md" alt="Schwarz-Weiß-Foto von einer Demonstration schwuler Aktivisten in Berlin">
                             <h3 class="text-3xl font-bold mt-4">DAMALS</h3>
@@ -98,15 +119,15 @@
                         </div>
                     </div>
                     <p class="mt-10 text-xl md:text-2xl max-w-4xl mx-auto">Stellt euch vor, ihr könntet wegen der Person, die ihr liebt, den Job verlieren oder im Gefängnis landen. Das war jahrzehntelang Realität.</p>
-                    <p class="mt-4 text-2xl md:text-3xl font-bold text-indigo-400">Unsere Frage heute: Was hat sich <b>wirklich</b> geändert?</p>
+                    <p class="mt-4 text-2xl md:text-3xl font-bold text-indigo-400">Unsere Frage heute: Was hat sich *wirklich* geändert?</p>
                 </div>
             </section>
 
             <!-- Folie 3: Der rechtliche Käfig -->
             <section class="slide" data-slide-id="3">
-                <div class="slide-content bg-gray-800 border border-gray-700">
-                    <h2 class="text-5xl font-bold mb-8">TEIL 1: DAMALS - Ein Leben im Verborgenen</h2>
-                    <div class="p-8 bg-gray-900 rounded-lg box-shadow-strong text-left max-w-4xl mx-auto flex items-center gap-8">
+                <div class="slide-content">
+                    <h2 class="part-title">TEIL 1: DAMALS - EIN LEBEN IM VERBORGENEN</h2>
+                    <div class="p-8 bg-gray-900/50 rounded-lg box-shadow-strong text-left max-w-4xl mx-auto flex items-center gap-8">
                         <img src="https://images.pexels.com/photos/8941643/pexels-photo-8941643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-1/3 h-auto object-cover rounded-md grayscale hidden md:block" alt="Alter Gesetzestext mit einem Richterhammer">
                         <div>
                             <h3 class="text-4xl font-bold mb-4">Der rechtliche Käfig</h3>
@@ -122,8 +143,9 @@
 
             <!-- Folie 4: Gesellschaftlicher Druck -->
             <section class="slide" data-slide-id="4">
-                <div class="slide-content bg-gray-800 border border-gray-700">
-                     <div class="p-8 bg-gray-900 rounded-lg box-shadow-strong text-left max-w-4xl mx-auto">
+                 <div class="slide-content">
+                    <h2 class="part-title">TEIL 1: DAMALS - EIN LEBEN IM VERBORGENEN</h2>
+                     <div class="p-8 bg-gray-900/50 rounded-lg box-shadow-strong text-left max-w-4xl mx-auto">
                         <div class="flex items-center gap-8">
                             <img src="https://images.pexels.com/photos/775417/pexels-photo-775417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-48 h-48 object-cover rounded-full hidden md:block grayscale" alt="Person die ihr Gesicht in den Händen verbirgt">
                             <div>
@@ -141,8 +163,9 @@
             
             <!-- Folie 5: Arbeitswelt Damals -->
             <section class="slide" data-slide-id="5">
-                <div class="slide-content bg-gray-800 border border-gray-700">
-                     <div class="p-8 bg-gray-900 rounded-lg box-shadow-strong text-left max-w-4xl mx-auto">
+                <div class="slide-content">
+                    <h2 class="part-title">TEIL 1: DAMALS - EIN LEBEN IM VERBORGENEN</h2>
+                     <div class="p-8 bg-gray-900/50 rounded-lg box-shadow-strong text-left max-w-4xl mx-auto">
                         <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2070&auto=format&fit=crop" class="w-full h-56 object-cover rounded-md mb-6 grayscale" alt="Leere, alte Bürostühle in einer Reihe">
                         <h3 class="text-4xl font-bold">Die Arbeitswelt: Schweigen als Job-Versicherung</h3>
                         <ul class="list-disc list-inside text-xl space-y-3 mt-4">
@@ -154,9 +177,9 @@
                 </div>
             </section>
             
-            <!-- KORRIGIERTE FOLIE 6: Gegenüberstellung -->
+            <!-- Folie 6: Gegenüberstellung -->
             <section class="slide" data-slide-id="6">
-                 <div class="slide-content bg-gray-800 border border-gray-700">
+                 <div class="slide-content">
                     <h2 class="text-5xl font-bold mb-12">Vom Schatten ins Licht</h2>
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                         <div class="text-center">
@@ -173,11 +196,11 @@
 
             <!-- Folie 7: Sichtbarkeit & Community -->
             <section class="slide" data-slide-id="7">
-                <div class="slide-content bg-gray-800 border border-gray-700">
-                    <h2 class="text-5xl font-bold mb-8">TEIL 2: DER WANDEL ZUM HEUTE</h2>
+                <div class="slide-content">
+                    <h2 class="part-title">TEIL 2: DER WANDEL ZUM HEUTE</h2>
                     <h3 class="text-4xl font-bold text-center mb-6">Die Früchte des Kampfes: Sichtbarkeit & Community</h3>
                     <div class="grid md:grid-cols-2 gap-6 text-xl">
-                        <div class="p-6 bg-gray-900 rounded-lg">
+                        <div class="p-6 bg-gray-900/50 rounded-lg">
                              <img src="https://images.pexels.com/photos/1483024/pexels-photo-1483024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-full h-48 object-cover rounded-md mb-4" alt="Lächelnde Menschen auf einer Pride Parade">
                             <h4 class="font-bold text-2xl mb-2 text-indigo-400">Sichtbarkeit schafft Normalität</h4>
                             <ul class="list-disc list-inside space-y-2">
@@ -185,7 +208,7 @@
                                 <li>Geoutete Stars als Vorbilder</li>
                             </ul>
                         </div>
-                        <div class="p-6 bg-gray-900 rounded-lg">
+                        <div class="p-6 bg-gray-900/50 rounded-lg">
                             <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-full h-48 object-cover rounded-md mb-4" alt="Diverse Gruppe von Freunden, die sich umarmen">
                             <h4 class="font-bold text-2xl mb-2 text-indigo-400">Stärke durch Gemeinschaft</h4>
                             <ul class="list-disc list-inside space-y-2">
@@ -199,8 +222,9 @@
 
             <!-- Folie 8: Wandel Arbeitswelt -->
             <section class="slide" data-slide-id="8">
-                <div class="slide-content bg-gray-800 border border-gray-700">
-                    <div class="p-8 bg-gray-900 rounded-lg box-shadow-strong text-left max-w-4xl mx-auto">
+                <div class="slide-content">
+                    <h2 class="part-title">TEIL 2: DER WANDEL ZUM HEUTE</h2>
+                    <div class="p-8 bg-gray-900/50 rounded-lg box-shadow-strong text-left max-w-4xl mx-auto">
                         <h3 class="text-4xl font-bold text-center mb-2">Der Wandel in der Arbeitswelt</h3>
                         <p class="text-center text-xl mb-6">Von "Pinkwashing" 🏳️‍🌈... zu echter Kultur?</p>
                          <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2196&auto=format&fit=crop" class="w-full h-48 object-cover rounded-md mb-6" alt="Diverses Team in einem modernen Büro">
@@ -208,7 +232,7 @@
                             <li>Immer mehr Unternehmen fördern aktiv Diversität & Inklusion.</li>
                             <li>Queere Mitarbeiternetzwerke bieten wichtige Unterstützung.</li>
                          </ul>
-                         <blockquote class="mt-6 p-4 bg-gray-800 border-l-4 border-indigo-500 text-lg italic">
+                         <blockquote class="mt-6 p-4 bg-gray-800/70 border-l-4 border-indigo-500 text-lg italic">
                             "Für mich als junger schwuler Mann ist es heute möglich, meinen Berufswunsch im Rettungsdienst zu verfolgen, ohne meine Identität grundsätzlich verstecken zu müssen."
                          </blockquote>
                     </div>
@@ -218,7 +242,7 @@
             <!-- Folie 9: Probleme: Gewalt & Angst -->
             <section class="slide" data-slide-id="9">
                 <img src="https://images.pexels.com/photos/1999463/pexels-photo-1999463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Eine Person alleine in einer dunklen Gasse bei Nacht" class="bg-image">
-                <div class="slide-content bg-transparent backdrop-filter-none">
+                <div class="slide-content !bg-transparent !backdrop-filter-none !border-none">
                     <h2 class="text-5xl font-bold mb-8 text-shadow">TEIL 3: DIE REALITÄT HEUTE - Licht & Schatten</h2>
                     <div class="p-8 bg-black bg-opacity-60 rounded-lg text-left max-w-3xl mx-auto">
                         <h3 class="text-4xl font-bold mb-4 text-shadow">Realitäts-Check: Gewalt & Angst</h3>
@@ -233,16 +257,17 @@
             
             <!-- Folie 10: STATISTIKEN Zunahme -->
             <section class="slide" data-slide-id="10">
-                <div class="slide-content bg-gray-800 border border-gray-700">
+                <div class="slide-content">
+                    <h2 class="part-title">TEIL 3: DIE REALITÄT HEUTE</h2>
                     <h3 class="text-4xl font-bold text-center mb-8">Die nackten Zahlen: Ein alarmierender Trend</h3>
                     <div class="grid md:grid-cols-2 gap-8 items-center">
-                        <div class="text-center p-6 bg-gray-900 rounded-lg box-shadow-strong">
+                        <div class="text-center p-6 bg-gray-900/50 rounded-lg box-shadow-strong">
                             <h4 class="text-2xl font-bold mb-2 text-indigo-400">Deutschland</h4>
                             <p class="text-7xl font-black text-red-400 my-4">+50%</p>
                             <p class="text-lg">Anstieg der gemeldeten queerfeindlichen Straftaten von 2022 auf 2023 (auf 1.785 Fälle).</p>
                             <p class="text-xs mt-4 text-gray-500">Quelle: BKA / Statista</p>
                         </div>
-                        <div class="text-center p-6 bg-gray-900 rounded-lg box-shadow-strong">
+                        <div class="text-center p-6 bg-gray-900/50 rounded-lg box-shadow-strong">
                             <h4 class="text-2xl font-bold mb-2 text-indigo-400">Österreich</h4>
                             <p class="text-7xl font-black text-red-400 my-4">+20%</p>
                             <p class="text-lg">Anstieg der Hassverbrechen aufgrund sexueller Orientierung von 2022 auf 2023 (auf 446 Fälle).</p>
@@ -255,9 +280,10 @@
 
             <!-- Folie 11: ARTEN DER STRAFTATEN -->
             <section class="slide" data-slide-id="11">
-                <div class="slide-content bg-gray-800 border border-gray-700">
+                <div class="slide-content">
+                    <h2 class="part-title">TEIL 3: DIE REALITÄT HEUTE</h2>
                     <h3 class="text-4xl font-bold text-center mb-8">Welche Form nimmt der Hass an?</h3>
-                    <div class="p-8 bg-gray-900 rounded-lg box-shadow-strong max-w-4xl mx-auto">
+                    <div class="p-8 bg-gray-900/50 rounded-lg box-shadow-strong max-w-4xl mx-auto">
                         <p class="text-xl mb-6">Die häufigsten Delikte gegen queere Menschen in Deutschland (2023):</p>
                         <div class="space-y-6 text-left">
                             <div class="flex items-center">
@@ -298,12 +324,13 @@
 
             <!-- Folie 12: Subtile Diskriminierung -->
             <section class="slide" data-slide-id="12">
-                <div class="slide-content bg-gray-800 border border-gray-700">
-                     <div class="p-8 bg-gray-900 rounded-lg box-shadow-strong text-left max-w-4xl mx-auto">
+                <div class="slide-content">
+                    <h2 class="part-title">TEIL 3: DIE REALITÄT HEUTE</h2>
+                     <div class="p-8 bg-gray-900/50 rounded-lg box-shadow-strong text-left max-w-4xl mx-auto">
                         <h3 class="text-4xl font-bold mb-4">Realitäts-Check: Subtile Diskriminierung</h3>
                         <p class="text-xl mb-4">Es ist nicht immer der offene Hass. Oft sind es die "kleinen" Nadelstiche (Mikroaggressionen):</p>
                         <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2070&auto=format&fit=crop" class="w-full h-48 object-cover rounded-md mb-6" alt="Gruppe von Leuten, eine Person wird ausgeschlossen">
-                        <ul class="list-disc list-inside text-xl space-y-2 bg-gray-800 p-4 rounded-md">
+                        <ul class="list-disc list-inside text-xl space-y-2 bg-gray-800/70 p-4 rounded-md">
                             <li>"Wer ist denn der Mann bei euch in der Beziehung?"</li>
                             <li>Witze auf Kosten von Minderheiten.</li>
                             <li>Die automatische Annahme, jeder sei heterosexuell.</li>
@@ -314,8 +341,9 @@
 
             <!-- Folie 13: Hürden Arbeitswelt -->
             <section class="slide" data-slide-id="13">
-                <div class="slide-content bg-gray-800 border border-gray-700">
-                     <div class="p-8 bg-gray-900 rounded-lg box-shadow-strong text-left max-w-4xl mx-auto">
+                <div class="slide-content">
+                    <h2 class="part-title">TEIL 3: DIE REALITÄT HEUTE</h2>
+                     <div class="p-8 bg-gray-900/50 rounded-lg box-shadow-strong text-left max-w-4xl mx-auto">
                         <h3 class="text-4xl font-bold">Realitäts-Check: Hürden in der Arbeitswelt</h3>
                         <img src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?q=80&w=2071&auto=format&fit=crop" class="w-full h-56 object-cover rounded-md my-6" alt="Eine gläserne Decke über Geschäftsleuten">
                         <ul class="list-disc list-inside text-xl space-y-3">
@@ -330,7 +358,7 @@
             <!-- Folie 14: Fazit & Appell -->
             <section class="slide" data-slide-id="14">
                 <img src="https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hände verschiedener Menschen liegen aufeinander" class="bg-image" style="filter: brightness(0.6);">
-                <div class="slide-content bg-transparent backdrop-filter-none">
+                <div class="slide-content !bg-transparent !backdrop-filter-none !border-none">
                     <div class="p-10 bg-black bg-opacity-50 rounded-lg max-w-4xl mx-auto">
                         <h3 class="text-4xl font-bold text-center mb-6 text-shadow">Fazit & Appell</h3>
                         <ul class="list-none text-2xl space-y-4 text-center text-shadow">
@@ -345,7 +373,7 @@
 
             <!-- Folie 15: Diskussion -->
             <section class="slide" data-slide-id="15">
-                 <div class="slide-content bg-gray-800 border border-gray-700">
+                 <div class="slide-content">
                     <h2 class="text-5xl font-bold mb-8">Zeit für Ihre Gedanken.</h2>
                     <div class="text-left max-w-3xl mx-auto text-2xl space-y-8">
                         <p class="flex items-start"><span class="mr-4 text-3xl text-indigo-400">❓</span> Wo nehmt ihr persönlich den größten Wandel wahr?</p>
