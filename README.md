@@ -1,19 +1,21 @@
 Präsentation: Von Verstecken zu Sichtbarkeit?
 Eine webbasierte Präsentation über die Geschichte und aktuelle Situation von queeren Menschen in Deutschland und Österreich.
 
-📜 Beschreibung
+📜 <b>Beschreibung</b>
 Dieses Projekt ist eine interaktive, webbasierte Präsentation zum Thema "Von Verstecken zu Sichtbarkeit? Queeres Leben zwischen Fortschritt und alten Vorurteilen". Sie wurde für einen Vortrag im Rahmen eines Kurses entwickelt und beleuchtet die rechtliche und gesellschaftliche Entwicklung von der Kriminalisierung bis heute. Der Fokus liegt dabei auf den erkämpften Fortschritten sowie den paradoxen und besorgniserregenden Realitäten der Gegenwart, wie der Zunahme von Hasskriminalität.
 
 Die Präsentation ist als eigenständige index.html-Datei konzipiert und kann direkt über GitHub Pages gehostet und in jedem modernen Webbrowser angezeigt werden.
 
-Steuerung:
-Weiter: Klick auf den →-Button oder die Pfeil-rechts-Taste.
+<b>Steuerung:</b>
 
-Zurück: Klick auf den ←-Button oder die Pfeil-links-Taste.
+<b>Weiter:</b> Klick auf den →-Button oder die Pfeil-rechts-Taste.
 
-Vollbild: Klick auf das Vollbild-Icon oder drücke F / F11.
+<b>Zurück:</b> Klick auf den ←-Button oder die Pfeil-links-Taste.
 
-📑 Inhaltlicher Aufbau
+<b>Vollbild:</b> Klick auf das Vollbild-Icon oder drücke F / F11.
+
+📑 <b>Inhaltlicher Aufbau</b>
+
 Die Präsentation folgt einer klaren dramaturgischen Struktur in drei Teilen:
 
 TEIL 1: DAMALS - Ein Leben im Verborgenen
