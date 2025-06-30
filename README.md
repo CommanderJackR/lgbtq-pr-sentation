@@ -6,24 +6,6 @@ Dieses Projekt ist eine interaktive, webbasierte Präsentation zum Thema "Von Ve
 
 Die Präsentation ist als eigenständige index.html-Datei konzipiert und kann direkt über GitHub Pages gehostet und in jedem modernen Webbrowser angezeigt werden.
 
-✨ Features
-Interaktive Navigation: Steuerung über Buttons oder die Pfeiltasten auf der Tastatur.
-
-Vollbildmodus: Für ein immersives Präsentationserlebnis.
-
-Modernes Design: Ein dunkles, ansprechendes Design mit "Glassmorphism"-Effekten für gute Lesbarkeit.
-
-Responsiv: Die Darstellung passt sich an verschiedene Bildschirmgrößen an.
-
-Medien-Einbettung: Integriertes YouTube-Video zur emotionalen Vertiefung des Themas.
-
-Datenbasiert: Beinhaltet aktuelle Statistiken zu queerfeindlicher Gewalt in Deutschland und Österreich.
-
-🚀 Live-Demo & Bedienung
-Die Präsentation kann live über GitHub Pages aufgerufen werden.
-
-➡️ [Link zur Live-Präsentation einfügen] (Hier musst du den Link zu deiner GitHub Page eintragen, z.B. https://dein-username.github.io/dein-repository-name/)
-
 Steuerung:
 Weiter: Klick auf den →-Button oder die Pfeil-rechts-Taste.
 
